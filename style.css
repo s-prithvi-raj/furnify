@@ -54,8 +54,8 @@ opacity: 0.8;
 }
 .main .main_content{
 padding-top:15%;
-margin-left:10%;
-margin-right:10%;
+margin-left:5%;
+margin-right:5%;
 }
 .main .main_content h2{
 font-size:40px;
@@ -64,7 +64,6 @@ font-weight:bolder;
 text-align:center;
 color:black;
 line-height:20px;
-padding:10%;
 }
 .main .main_content h2 span{
 font-size:20px;

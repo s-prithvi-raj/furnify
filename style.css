@@ -272,10 +272,14 @@ padding:40px;
     font-size:35px;
     text-align:center;
     padding:20px;
+    font-family: chewy;
     /* text-transform:uppercase; */
 }
 .team h2 b{
    font-size:60px;
+   font-family: algeria;
+   color: rgb(255, 255, 255);
+   text-shadow: 0 0 10px #ff00ea;
 }
 .team .team_container{
 display:flex;

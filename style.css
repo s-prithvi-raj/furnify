@@ -520,6 +520,9 @@ transition:0.5s;
 .register .container .container_box p {
    float:right;
 }
+.register .container .container_box pre {
+   float:center;
+}
 .register .container .container_box p a {
    padding:2px;
 }

@@ -17,10 +17,13 @@
           <a href="blog.html">Blogs</a>
           <a href="contact.html">Contact Us</a>
           <a href="login.html">Login/Register</a>
+          <input type="text"  placeholder=" Search .." >
+          <button onclick="dark()" type="button" id="dark"></button>
+		<button onclick="light()" type="button" id="light"></button>
         </div>
     </nav>
     <div class="register">
-        <h2>Register</h2>
+        <h2><b>Register</b></h2>
         <form class="register_form">
             <div class="container">
                 <label>Fullname:</label>
@@ -85,5 +88,19 @@
 		<hr>
 		<p>Copyright &copy; S Prithvi Raj. All rights reserved</p>
 	</footer>
+    <script>
+        function dark() {
+			var element = document.body;
+			element.classList.toggle("dark-mode");
+			document.getElementById("dark").style.visibility = 'hidden';
+			document.getElementById("light").style.visibility = 'visible';
+		}
+		function light() {
+			var element = document.body;
+			element.classList.toggle("dark-mode");
+			document.getElementById("dark").style.visibility = 'visible';
+			document.getElementById("light").style.visibility = 'hidden';
+		}
+    </script>
 </body>
 </html>

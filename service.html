@@ -11,12 +11,15 @@
            <a href="index.html"><img src="images/1stop 01.png" width="90"></a>
         </div>
         <div class="nav_side">
-		<a href="index.html">Home</a>  
-          <a href="about.html">About Us</a>
-          <a href="service.html">Services</a>
-          <a href="blog.html">Blogs</a>
-          <a href="contact.html">Contact Us</a>
-          <a href="#">Login/Register</a>
+			<a href="index.html">Home</a>  
+			<a href="about.html">About Us</a>
+			<a href="#">Services</a>
+			<a href="blog.html">Blogs</a>
+			<a href="contact.html">Contact Us</a>
+			<a href="login.html">Login/Register</a>
+			<input type="text"  placeholder=" Search .." >
+			<button onclick="dark()" type="button" id="dark"></button>
+		<button onclick="light()" type="button" id="light"></button>
         </div>
     </nav>
     <div class="product" style="padding-top:100px;">
@@ -239,6 +242,18 @@
                  .then(response => alert("Thank you, for your review, Hope you had great shopping with us."))
                  .catch(error => console.error('Error!', error.message))
              })
+			 function dark() {
+			var element = document.body;
+			element.classList.toggle("dark-mode");
+			document.getElementById("dark").style.visibility = 'hidden';
+			document.getElementById("light").style.visibility = 'visible';
+		}
+		function light() {
+			var element = document.body;
+			element.classList.toggle("dark-mode");
+			document.getElementById("dark").style.visibility = 'visible';
+			document.getElementById("light").style.visibility = 'hidden';
+		}
      </script>
 </body>
 </html>

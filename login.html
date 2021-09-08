@@ -11,16 +11,19 @@
            <a href="index.html"><img src="images/1stop 01.png" width="90"></a>
         </div>
         <div class="nav_side">
-		<a href="index.html">Home</a>  
+		<a href="index.html">Home</a> 
           <a href="about.html">About Us</a>
           <a href="service.html">Services</a>
           <a href="blog.html">Blogs</a>
           <a href="contact.html">Contact Us</a>
-          <a href="login.html">Login/Register</a>
+          <a href="#">Login/Register</a>
+		  <input type="text"  placeholder=" Search .." >
+		  <button onclick="dark()" type="button" id="dark"></button>
+		<button onclick="light()" type="button" id="light"></button>
         </div>
     </nav>
     <div class="login">
-        <h2>Login</h2>
+        <h2><b>Login</b></h2>
         <form class="login_form">
             <div class="container">
                 <label>Username:</label>
@@ -70,5 +73,20 @@
 		<hr>
 		<p>Copyright &copy; S Prithvi Raj. All rights reserved</p>
 	</footer>
+
+	<script>
+		function dark() {
+			var element = document.body;
+			element.classList.toggle("dark-mode");
+			document.getElementById("dark").style.visibility = 'hidden';
+			document.getElementById("light").style.visibility = 'visible';
+		}
+		function light() {
+			var element = document.body;
+			element.classList.toggle("dark-mode");
+			document.getElementById("dark").style.visibility = 'visible';
+			document.getElementById("light").style.visibility = 'hidden';
+		}
+	</script>
 </body>
 </html>

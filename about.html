@@ -8,15 +8,20 @@
 <body>
     <nav class="nav nav_top">
         <div class="logo">
-           <a href="index.html"><img src="images/1stop 01.png" width="90"></a>
+           <a href="index.html"><img src="images/1stop 01.png" ></a>
         </div>
         <div class="nav_side">
-	  <a href="index.html">Home</a>  
-          <a href="about.html">About Us</a>
-          <a href="service.html">Services</a>
-          <a href="blog.html">Blogs</a>
-          <a href="contact.html">Contact Us</a>
-          <a href="#">Login/Register</a>
+			
+			<a href="index.html">Home</a>  	  
+			<a href="#">About Us</a>
+			<a href="service.html">Services</a>
+			<a href="blog.html">Blogs</a>
+			<a href="contact.html">Contact Us</a>
+        	<a href="login.html">Login/Register</a>
+			<input type="text"  placeholder=" Search .." >
+			<button onclick="dark()" type="button" id="dark"></button>
+			<button onclick="light()" type="button" id="light"></button>
+
         </div>
     </nav>
     <div class="about">
@@ -57,7 +62,6 @@ We strive to grow relationships with our customers.</p>
 				<button type="submit">Submit</button>
 			</form>
 		</div>
-
 	</div>
 	<footer>
 		<div class="footer_logo">
@@ -87,7 +91,7 @@ We strive to grow relationships with our customers.</p>
 		<div class="contact">
 			<h3>Contact Us</h3>
 			<a href="tel: +919019956544" target="_black"><i class="fa fa-phone" aria-hidden="true"></i></a>
-			<a href="mailto:prithvirajspr2510@gmail.com" target="_black"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+			<a href="mailto: prithvirajspr2510@gmail.com" target="_black"><i class="fa fa-envelope" aria-hidden="true"></i></a>
 			<a href="https://wa.me/919019956544" target="_black"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
 		</div>
 		<hr>
@@ -103,6 +107,19 @@ We strive to grow relationships with our customers.</p>
                  .then(response => alert("Thank you, for your review, Hope you had great shopping with us."))
                  .catch(error => console.error('Error!', error.message))
              })
+
+			 function dark() {
+			var element = document.body;
+			element.classList.toggle("dark-mode");
+			document.getElementById("dark").style.visibility = 'hidden';
+			document.getElementById("light").style.visibility = 'visible';
+		}
+		function light() {
+			var element = document.body;
+			element.classList.toggle("dark-mode");
+			document.getElementById("dark").style.visibility = 'visible';
+			document.getElementById("light").style.visibility = 'hidden';
+		}
      </script>
 </body>
 </html>

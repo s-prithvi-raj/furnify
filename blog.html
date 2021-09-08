@@ -19,9 +19,12 @@
 		  <a href="index.html">Home</a>  
 	    <a href="about.html">About Us</a>
 		<a href="service.html">Services</a>
-		<a href="blog.html">Blogs</a>
+		<a href="#">Blogs</a>
 		<a href="contact.html">Contact Us</a>
 		<a href="login.html">Login/Register</a>
+		<input type="text"  placeholder=" Search .." >
+		<button onclick="dark()" type="button" id="dark"></button>
+		<button onclick="light()" type="button" id="light"></button>
       </div>
 	</nav>
     <div class="blog">
@@ -57,12 +60,12 @@ furnify had the patience of saint for me, even with a lot of toing and froing an
    </div>
     </div>
     <div class="feed">
-		<h2>Write a review</h2>
+		<h2 style="font-weight: bold;">Write a review</h2>
 		<div class="feed_form">
 			<form name="submit-googlesheet" method="post">
 				<input type="text" name="Name" placeholder="Name"><br>
 				<input type="email" name="Email" placeholder="Email Id"><br>
-				<input type="number" name="Number" placeholder="Contact Number"><br>
+				<input type="number" name="Number" placeholder="Contact Number" style="width: 425px;"><br>
 				<textarea rows="5" cols="7" name="Review" palceholder="Write your review"></textarea><br>
 				<button type="submit">Submit</button>
 			</form>
@@ -117,6 +120,19 @@ furnify had the patience of saint for me, even with a lot of toing and froing an
                 .then(response => alert("Thank you, for your review, Hope you had great shopping with us."))
                 .catch(error => console.error('Error!', error.message))
             })
+
+			function dark() {
+			var element = document.body;
+			element.classList.toggle("dark-mode");
+			document.getElementById("dark").style.visibility = 'hidden';
+			document.getElementById("light").style.visibility = 'visible';
+		}
+		function light() {
+			var element = document.body;
+			element.classList.toggle("dark-mode");
+			document.getElementById("dark").style.visibility = 'visible';
+			document.getElementById("light").style.visibility = 'hidden';
+		}
 	</script>
 </body>
 </html>

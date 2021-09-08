@@ -136,6 +136,8 @@
    margin-right:5%;
    transform: translate(0%, -125%);
    z-index: 2;
+   background-color: rgba(121, 91, 53, 0.4);
+
 }
 .main .bg-text h2{
    font-size:370%;
@@ -147,7 +149,7 @@
    line-height:40px;
 }
 .main .bg-text h2 b{
-   color: white;
+   color: rgb(238, 255, 0);
 }
 .main .bg-text h2 span{
    font-size:25px;

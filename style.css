@@ -36,6 +36,12 @@
 .dark-mode .product .product_container .item:hover{
    box-shadow:0px 3px 65px 0px rgba(255, 255, 255, 0.3);
 }
+.dark-mode .container{
+   background-color: rgb(15, 15, 85);
+}
+.dark-mode a{
+   color: blueviolet;
+}
 .logo{
    float:left;
    width:35%;

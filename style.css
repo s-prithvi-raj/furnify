@@ -115,7 +115,7 @@
 }
 .main {
    margin-top: 50px;
-   height:85%;
+   height:80%;
    width:100%;
    position: relative;
 }
@@ -130,6 +130,8 @@
 }
 
 .main .bg-text{
+   padding-top: 15%;
+   padding-bottom: 15%;
    transform: translate(0%, -125%);
    z-index: 2;
    background-color: rgba(121, 91, 53, 0.4);

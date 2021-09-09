@@ -130,8 +130,6 @@
 }
 
 .main .bg-text{
-   padding-top:10%;
-   padding-bottom:10%;
    transform: translate(0%, -125%);
    z-index: 2;
    background-color: rgba(121, 91, 53, 0.4);
